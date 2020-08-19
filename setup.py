@@ -8,12 +8,16 @@ setup(
             This is a sample python package for encapsulating custom
             tranforms from scikit-learn into Watson Machine Learning
       ''',
-      url='https://github.com/vnderlev/sklearn_transforms/',
-      author='Vanderlei Munhoz',
-      author_email='vnderlev@protonmail.ch',
+      url='https://github.com/LFMAKER/sklearn_transforms/',
+      author='Leonardo Oliveira',
+      author_email='lfmaker@outlook.com',
       license='BSD',
       packages=[
             'my_custom_sklearn_transforms'
       ],
-      zip_safe=False
+      zip_safe=False,
+      install_requires=[
+            'imbalanced-learn==0.4.3',
+      ],
+      
 )
