@@ -36,7 +36,7 @@ class ConvertColumns(BaseEstimator, TransformerMixin):
         data['Cargo'] = le.fit_transform(data['Cargo'])
         data['Estado civil'] = le.fit_transform(data['Estado civil'])
         data['Necessita de hora extra'] = le.fit_transform(data['Necessita de hora extra'])
-        data['Contratar'] = le.fit_transform(data['Contratar'])
+        # data['Contratar'] = le.fit_transform(data['Contratar'])
         # Retornamos um novo dataframe sem as colunas indesejadas
         return data
 
