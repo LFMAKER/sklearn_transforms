@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(
-      name='my_custom_sklearn_transforms',
+      name='maratonaibm_sklearn_transforms',
       version='1.0',
       description='''
             This is a sample python package for encapsulating custom
