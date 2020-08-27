@@ -1,5 +1,5 @@
 from sklearn.base import BaseEstimator, TransformerMixin
-
+from sklearn import preprocessing
 
 import pandas as pd
 
@@ -27,6 +27,7 @@ class ConvertColumns(BaseEstimator, TransformerMixin):
     def transform(self, X):
         # Primeiro realizamos a cópia do dataframe 'X' de entrada
         data = X.copy()
+        le = preprocessing.LabelEncoder()
         data['Local de trabalho'] = le.fit_transform(data['Local de trabalho'])
         data['Departmento'] = le.fit_transform(data['Departmento'])
         data['Educacao'] = le.fit_transform(data['Educacao'])
